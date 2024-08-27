@@ -1,11 +1,8 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
 import "./App.css";
-import { TodoApp } from "./components/apps/TodoApp";
+import { TaskApp } from "./components/apps/TaskApp";
 
 function App() {
-  return <TodoApp />;
+  return <TaskApp />;
 }
 
 export default App;
