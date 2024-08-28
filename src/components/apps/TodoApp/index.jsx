@@ -34,6 +34,7 @@ function TodoApp() {
     <div>
       <AddTodo onEnter={addTodo} />
       <TodoList todos={todos} onStatusChange={toggleTodoStatus} />
+      <TodoList todos={todos} onStatusChange={toggleTodoStatus} />
     </div>
   );
 }
