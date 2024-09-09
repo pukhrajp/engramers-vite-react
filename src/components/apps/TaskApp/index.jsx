@@ -11,9 +11,12 @@ export function TaskApp() {
   ]);
   const [filteredTasks, setFilteredTasks] = React.useState(tasks);
 
-  function addTask(task) {
-    setTasks([...tasks, task]);
-  }
+  const addTask = React.useCallback(function (task) {
+    setTasks((currentTasks) => [...currentTasks, task]);
+  }, []);
+  // function addTask(task) {
+  //   setTasks([...tasks, task]);
+  // }
 
   function deleteTask(task) {
     setTasks(tasks.filter((item) => item.id !== task.id));
